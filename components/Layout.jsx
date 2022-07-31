@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className='layout'>
       <Head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
         <title>JS Mastery Store</title>
       </Head>
       <header>

@@ -1,32 +1,71 @@
 import React from 'react'
-import Link from 'next/link'
+/*import Link from 'next/link'*/
 
-import { urlFor } from '../lib/client'
+/*import { urlFor } from '../lib/client'*/
 
-const FooterBanner = ({ footerBanner: {
-  discount,largeText1,largeText2,saleTime,smallText,desc, midText, product, buttonText, image 
-} }) => {
+const FooterBanner = () => {
   return (
-    <div className='footer-banner-container'>
-      <div className='banner-desc'>
-        <div className='left'>
-          <p>{discount}</p>
-          <h3>{largeText1}</h3>
-          <h3>{largeText2}</h3>
-          <p>{saleTime}</p>
-          </div>
-          <div className='right'>
-            <p>{smallText}</p>
-            <h3>{midText}</h3>
-            <p>{desc}</p>
-            <Link href={`/product/${product}`}>
-              <button type="button">{buttonText}</button>
-            </Link>
+    <div className="contact section container" id="contact">                
+    <div className="contact__container grid">
+    <div className="contact__box">
+    <h2 className="section__title">
+        Reach out to us today <br/> via any of the given <br/> information
+    </h2>
+
+    <div className="contact__data">
+        <div className="contact__information">
+            <h3 className="contact__subtitle">Call us for instant support</h3>
+            <span className="contact__description">
+                <i className="ri-phone-line contact__icon"></i>
+                +999 888 777
+            </span>
         </div>
 
-        <img src={urlFor(image)} className="footer-banner-image"/>
-      </div>
+        <div className="contact__information">
+            <h3 className="contact__subtitle">Write us by mail</h3>
+            <span className="contact__description">
+                <i className="ri-mail-line contact__icon"></i>
+                user@email.com
+            </span>
+        </div>
     </div>
+    </div>
+    <div className="footer__content">
+                    <h3 className="footer__title">Our Address</h3>
+
+                    <ul className="footer__data">
+                        <li className="footer__information">1234 - Peru</li>
+                        <li className="footer__information">La Libertad - 43210</li>
+                        <li className="footer__information">123-456-789</li>
+                    </ul>
+                    <br/>
+                    <div className="footer__content">
+                    <h3 className="footer__title">Contact Us</h3>
+
+                    <ul className="footer__data">
+                        <li className="footer__information">+999 888 777</li>
+                        
+                        <div className="footer__social">
+                            <a href="https://www.facebook.com/" className="footer__social-link">
+                                <i className="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" className="footer__social-link">
+                                <i className="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" className="footer__social-link">
+                                <i className="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
   )
 }
 

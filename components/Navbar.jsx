@@ -10,7 +10,7 @@ const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
   return (
     <div className='navbar-container'>
-      <p className='logo'>
+      <p className='nav__logo'>
         <Link href="/">JSM Headphones</Link>
       </p>
 
