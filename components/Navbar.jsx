@@ -9,7 +9,7 @@ import { useStateContext } from '../context/StateContext';
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
   return (
-    <div className='navbar-container'>
+    <div className='nav container'>
       <p className='nav__logo'>
         <Link href="/">JSM Headphones</Link>
       </p>
