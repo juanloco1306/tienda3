@@ -8,6 +8,8 @@ const FooterBanner = () => {
     <div className="contact section container" id="contact">                
     <div className="contact__container grid">
     <div className="contact__box">
+        <br/>
+        <br/>
     <h2 className="section__title">
         Reach out to us today <br/> via any of the given <br/> information
     </h2>

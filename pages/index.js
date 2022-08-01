@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+
 
 import { client } from '../lib/client';
 
@@ -41,12 +42,11 @@ const Home = ({ products, bannerData }) => {
                             </p>
                         </div>
 
-                        <a href="#" className="button--link button--flex">
-                            Shop Now <i className="ri-arrow-right-down-line button__icon"></i>
-                        </a>
+
                     </div>
                 </div>
             </div>
+            <br/>
 
 
             <div className="steps section container">
@@ -82,6 +82,8 @@ const Home = ({ products, bannerData }) => {
                     </div>
                 </div>
             </div>
+            <br/>
+            <br/>
     <div className='product section container'>
       <h2 className='section__title-center'>Best selling products</h2>
       <p className='product__description'>Speakers</p>
@@ -92,7 +94,10 @@ const Home = ({ products, bannerData }) => {
         {products?.map((product) => <Product key={product._id} product={product} />)}
       </div>
       </div>
+
       <div className="questions section" id="faqs">
+      <br/>
+      <br/>
                 <h2 className="section__title-center questions__title container">
                     Some common questions <br/> were often asked
                 </h2>
@@ -196,6 +201,7 @@ const Home = ({ products, bannerData }) => {
                                 </p>
                             </div>
                         </div>
+                        <br/>
                     </div>
                 </div>
             </div>
