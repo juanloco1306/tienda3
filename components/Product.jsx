@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 import { urlFor } from '../lib/client'
 
@@ -7,7 +8,8 @@ const Product = ({product: {image,name,slug,price}}) => {
   return (
     <div>
       <Link href={`/product/${slug.current}`}>
-                          <div className="product__card">
+                          <motion.div transition={{duration: 2}}  initial={{ scale:0, opacity:0 }}     whileInView={{ scale:1, opacity: 1 }}
+        viewport={{ once: true }} className="product__card">
                         <div className="product__circle"></div>
 
                         <img src={urlFor(image && image[0])}
@@ -20,7 +22,7 @@ const Product = ({product: {image,name,slug,price}}) => {
                         <button className="button--flex product__button">
                             <i className="ri-shopping-bag-line"></i>
                         </button>
-                    </div>
+                    </motion.div>
                   </Link>
     </div>
   )

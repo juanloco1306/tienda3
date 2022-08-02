@@ -1,11 +1,19 @@
 import React from 'react'
 /*import Link from 'next/link'*/
-
+import { motion } from 'framer-motion'
 /*import { urlFor } from '../lib/client'*/
 
 const FooterBanner = () => {
   return (
-    <div className="contact section container" id="contact">                
+    <motion.div whileInView={{
+        scale: [.3, .4, .5, .7, 1]
+     }}     
+     viewport={{ once: true }}  transition={{
+        duration: 5,
+        ease: "easeInOut",
+        times: [0, 0.2, 0.5, 0.8, 1],
+        repeatDelay: 1
+      }} className="contact section container" id="contact">                
     <div className="contact__container grid">
     <div className="contact__box">
         <br/>
@@ -63,7 +71,7 @@ const FooterBanner = () => {
         </div>
         
     </div>
-    </div>
+    </motion.div>
 
 
 

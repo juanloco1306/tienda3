@@ -1,12 +1,14 @@
 import React from 'react'
 /*import Link from 'next/link'*/
+import { motion } from 'framer-motion'
 
 import { urlFor } from '../lib/client'
 
 const HeroBanner = ({ heroBanner }) => {
   return (
 
-        <div className="home" id="home">
+        <motion.div transition={{duration: 4}}  initial={{ y: -300, opacity:0 }}     whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }} className="home" id="home">
                 <div className="home__container container grid">
                 <img src={urlFor(heroBanner.image)} className='home__img' alt="headphones" />
 
@@ -35,7 +37,7 @@ const HeroBanner = ({ heroBanner }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
     
   )
 }
