@@ -620,6 +620,14 @@ section{
   padding: 0 1.25rem 1.25rem 2.5rem;
 }
 
+.questions__header input[type="radio"]{
+  display: none;
+}
+
+.questions__header input[type="radio"]:checked + .questions__content{
+  max-height: 400px;
+}
+
 .questions__header{
   display: flex;
   align-items: center;
@@ -630,7 +638,8 @@ section{
 
 .questions__content{
   overflow: hidden;
-  height: 0;
+  max-height: 0;
+  transition: max-height 0.5s;
 }
 
 .questions__item,
@@ -663,8 +672,10 @@ section{
 }
 
 /*=============== CONTACT ===============*/
+
 .contact__container{
   row-gap: 3.5rem;
+  /*margin-left: 100px;*/
 }
 
 .contact__data{
@@ -968,10 +979,13 @@ section{
 
   .home__container,
   .about__container,
-  .questions__container,
   .contact__container,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .questions__container {
+    grid-template-columns: repeat(1, 1fr);
   }
   
   .home{
@@ -1152,7 +1166,7 @@ section{
 
 .cart-num-items{
   margin-left: 10px;
-  color: #f02d34;
+  color: black;
 }
 .empty-cart{
   margin:40px;
@@ -1180,7 +1194,7 @@ padding: 20px 10px;
   width:180px ;
   height: 150px;
     border-radius: 15px;
- background-color: #ebebeb;
+ background-color: var(--first-color-light);
 }
 
 .item-desc .flex{
@@ -1237,7 +1251,7 @@ padding: 30px 65px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: var(--first-color);
   color: #fff;
   cursor: pointer;
     transform: scale(1, 1);
@@ -1282,7 +1296,8 @@ padding: 30px 65px;
 .product-detail-container{
   display: flex;
  gap: 40px;
- margin: 40px;
+ /*margin: 400px;*/
+ margin-left: 400px;
  margin-top: 60px;
  color: #324d67;
 
@@ -1290,7 +1305,8 @@ padding: 30px 65px;
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
+   /*background-color: #ebebeb;*/
+   background-color: var(--first-color);
 
   width: 400px;
   height: 400px;
@@ -1299,7 +1315,7 @@ padding: 30px 65px;
 }
 
 .product-detail-image:hover{
-  background-color: #f02d34;
+  background-color: var(--first-color-light);
 
 }
 
@@ -1311,14 +1327,14 @@ padding: 30px 65px;
 
 .small-image{
   border-radius: 8px;
-  background-color: #ebebeb;
+  background-color: var(--first-color-lighten);
   width: 70px;
   height: 70px;
   cursor: pointer;
 }
 
 .selected-image{
-  background-color:#f02d34;
+  background-color: var(--first-color-alt);
 }
 .reviews{
   color: #f02d34;
@@ -1343,7 +1359,7 @@ padding: 30px 65px;
   font-weight: 700 ;
   font-size: 26px;
   margin-top: 30px;
-  color:#f02d34;
+  color: black;
 }
 .price .old-price, .product-price .old-price, .price .old-price{
   color: gray;
@@ -1362,12 +1378,12 @@ padding: 30px 65px;
 
 .buttons .add-to-cart{
   padding: 5px 10px;
-  border: 1px solid #f02d34 ;
+  border: 1px solid var(--first-color) ;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: #f02d34;
+  color: var(--first-color-dark);
   cursor: pointer;
   width: 200px;
    transform: scale(1, 1);
