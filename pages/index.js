@@ -13,21 +13,22 @@ const Home = ({ products, bannerData }) => {
     <div className="about section container" id="about">
         <br/>
                 <div className="about__container grid">
-                    <Image src="/img/about.png" width={280} height={300} className="about__img"></Image>
+                    
 
 
                     <div className="about__data">
-                        <h2 className="section__title about__title">
+                        <motion.h2 transition={{duration: 2.8, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}} 
+    viewport={{ once: true }} className="section__title about__title">
                             Who we really are & <br/> why choose us
-                        </h2>
+                        </motion.h2>
 
-                        <motion.p transition={{duration: 2}}  initial={{ x: -300, opacity:0 }}     whileInView={{ x: 0, opacity: 1 }}
+                        <motion.p transition={{duration: 2.8, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}}
     viewport={{ once: true }} className="about__description">
                             We have over 4000+ unbiased reviews and our customers 
                             trust our plant process and delivery service every time
                         </motion.p>
 
-                        <motion.div transition={{duration: 2}}  initial={{ x: -300, opacity:0 }}     whileInView={{ x: 0, opacity: 1 }}
+                        <motion.div transition={{duration: 1, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}}
     viewport={{ once: true }} className="about__details">
                             <p className="about__details-description">
                                 <i className="ri-checkbox-fill about__details-icon"></i>
@@ -49,6 +50,7 @@ const Home = ({ products, bannerData }) => {
 
 
                     </div>
+                    <Image src="/img/about.png" width={280} height={300} className="about__img"></Image>
                 </div>
             </div>
             <br/>

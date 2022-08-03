@@ -5,14 +5,9 @@ import { motion } from 'framer-motion'
 
 const FooterBanner = () => {
   return (
-    <motion.div whileInView={{
-        scale: [.3, .4, .5, .7, 1]
-     }}     
+    <motion.div initial={{y: 300}} whileInView={{y:0}} 
      viewport={{ once: true }}  transition={{
-        duration: 5,
-        ease: "easeInOut",
-        times: [0, 0.2, 0.5, 0.8, 1],
-        repeatDelay: 1
+        duration: 3 , type: "spring", stiffness: 100
       }} className="contact section container" id="contact">                
     <div className="contact__container grid">
     <div className="contact__box">

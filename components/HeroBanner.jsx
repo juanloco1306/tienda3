@@ -7,7 +7,7 @@ import { urlFor } from '../lib/client'
 const HeroBanner = ({ heroBanner }) => {
   return (
 
-        <motion.div transition={{duration: 4}}  initial={{ y: -300, opacity:0 }}     whileInView={{ y: 0, opacity: 1 }}
+        <motion.div transition={{ type: "spring", bounce: 0.25}}  initial={{ y: -300, opacity:0 }}     whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }} className="home" id="home">
                 <div className="home__container container grid">
                 <img src={urlFor(heroBanner.image)} className='home__img' alt="headphones" />
