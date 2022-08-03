@@ -50,7 +50,7 @@ const Home = ({ products, bannerData }) => {
 
 
                     </div>
-                    <Image src="/img/about.png" width={280} height={300} className="about__img"></Image>
+                    <Image src="/img/champi1.jpg" width={380} height={400} className="about__img"></Image>
                 </div>
             </div>
             <br/>

@@ -333,7 +333,7 @@ section{
 
 /*=============== HOME ===============*/
 .home{
-  padding: 3.5rem 0 2rem;
+  padding: 2.5rem 0 1rem;
 }
 
 .home__container{
@@ -342,8 +342,9 @@ section{
 }
 
 .home__img{
-  width: 200px;
+  width: 300px;
   justify-self: center;
+  border-radius: 50%;
 }
 
 .home__title{
@@ -995,7 +996,7 @@ section{
     align-items: center;
   }
   .home__img{
-    width: 280px;
+    width: 480px;
     order: 1;
   }
   .home__social{
