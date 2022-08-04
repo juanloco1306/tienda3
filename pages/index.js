@@ -17,40 +17,40 @@ const Home = ({ products, bannerData }) => {
 
 
                     <div className="about__data">
-                        <motion.h2 transition={{duration: 2.8, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}} 
+                        <motion.h2 transition={{duration: 3, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}} 
     viewport={{ once: true }} className="section__title about__title">
-                            Who we really are & <br/> why choose us
+                            Reino Fungi
                         </motion.h2>
 
-                        <motion.p transition={{duration: 2.8, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}}
+                        <motion.p transition={{duration: 4, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}}
     viewport={{ once: true }} className="about__description">
-                            We have over 4000+ unbiased reviews and our customers 
-                            trust our plant process and delivery service every time
+                            Muchos creen que los hongos y las plantas son bastantes cercanos pero en realidad son mas parecidos a los animales, principalmente por su pared celular, ademas de ser organismos multicelulares, es decir, estan formados por varias celulas que estan conectados entre si.
                         </motion.p>
 
-                        <motion.div transition={{duration: 1, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}}
+                        <motion.div transition={{duration: 5, type: "tween"}}  initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}     whileInView={{y: 0, x: 0, opacity: 1, scale: 1}}
     viewport={{ once: true }} className="about__details">
                             <p className="about__details-description">
                                 <i className="ri-checkbox-fill about__details-icon"></i>
-                                We always deliver on time.
+                                El hongo de la penicilina ayuda con enfermedades
                             </p>
                             <p className="about__details-description">
                                 <i className="ri-checkbox-fill about__details-icon"></i>
-                                We give you guides to protect and care for your plants.
+                                Ayuda a las plantas y arboles a comunicarse
                             </p>
                             <p className="about__details-description">
                                 <i className="ri-checkbox-fill about__details-icon"></i>
-                                We always come over for a check-up after sale.
+                                El hongo de la levadura es indispensable para el pan y la cerveza
                             </p>
                             <p className="about__details-description">
                                 <i className="ri-checkbox-fill about__details-icon"></i>
-                                100% money back guaranteed.
+                                Sin ellos no habria vida en la tierra
                             </p>
                         </motion.div>
 
 
                     </div>
                     <Image src="/img/champi1.jpg" width={380} height={400} className="about__img"></Image>
+                    <br/>
                 </div>
             </div>
             <br/>
@@ -59,34 +59,34 @@ const Home = ({ products, bannerData }) => {
             <div className="steps section container">
                 <div className="steps__bg">
                     <h2 className="section__title-center steps__title">
-                        Steps to start your <br/> plants off right
+                        Como adentrarte en el extraño <br/> y fascinante mundo de los hongos
                     </h2>
 
                     <div className="steps__container grid">
-                        <motion.div transition={{type: "spring", duration: 3}}  initial={{ opacity:0 }}     whileInView={{ opacity: 1, }}
+                        <motion.div transition={{type: "spring", duration: 5}}  initial={{ opacity:0 }}     whileInView={{ opacity: 1, }}
     viewport={{ once: true }}  className="steps__card">
                             <div className="steps__card-number">01</div>
-                            <h3 className="steps__card-title">Choose Plant</h3>
+                            <h3 className="steps__card-title">Escoge tu Hongo</h3>
                             <p className="steps__card-description">
-                                We have several varieties plants you can choose from.
+                                Diseñamos increibles terrarios con amplia variedad de hongos
                             </p>
                         </motion.div>
 
-                        <motion.div transition={{type: "spring", duration: 5}}  initial={{ opacity:0 }}     whileInView={{ opacity: 1, }}
+                        <motion.div transition={{type: "spring", duration: 7}}  initial={{ opacity:0 }}     whileInView={{ opacity: 1, }}
     viewport={{ once: true }}   className="steps__card">
                             <div className="steps__card-number">02</div>
-                            <h3 className="steps__card-title">Place an order</h3>
+                            <h3 className="steps__card-title">Ordena</h3>
                             <p className="steps__card-description">
-                                Once your order is set, we move to the next step which is the shipping.
+                                Realiza tu pedido e ingresa la direccion de entrega
                             </p>
                             </motion.div>
 
-                            <motion.div transition={{type: "spring", duration: 7}}  initial={{ opacity:0 }}     whileInView={{ opacity: 1, }}
+                            <motion.div transition={{type: "spring", duration: 9}}  initial={{ opacity:0 }}     whileInView={{ opacity: 1, }}
     viewport={{ once: true }}  className="steps__card">
                             <div className="steps__card-number">03</div>
-                            <h3 className="steps__card-title">Get plants delivered</h3>
+                            <h3 className="steps__card-title">Recibe</h3>
                             <p className="steps__card-description">
-                                Our delivery process is easy, you receive the plant direct to your door.
+                                Nuestro proceso de entrega es rapido y eficiente, recibiras tus hongos lo mas pronto posible
                             </p>
                             </motion.div>
                     </div>
