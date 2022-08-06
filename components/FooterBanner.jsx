@@ -14,42 +14,28 @@ const FooterBanner = () => {
         <br/>
         <br/>
     <h2 className="section__title">
-        Reach out to us today <br/> via any of the given <br/> information
+        Contactanos<br/> para resolver <br/> cualquier duda
     </h2>
 
     <div className="contact__data">
-        <div className="contact__information">
-            <h3 className="contact__subtitle">Call us for instant support</h3>
-            <span className="contact__description">
-                <i className="ri-phone-line contact__icon"></i>
-                +999 888 777
-            </span>
-        </div>
 
         <div className="contact__information">
-            <h3 className="contact__subtitle">Write us by mail</h3>
+            <h3 className="contact__subtitle">Escribenos a nuestro correo</h3>
             <span className="contact__description">
                 <i className="ri-mail-line contact__icon"></i>
-                user@email.com
+                fungidecoradores@gmail.com
             </span>
         </div>
     </div>
     </div>
     <div className="footer__content">
-                    <h3 className="footer__title">Our Address</h3>
-
-                    <ul className="footer__data">
-                        <li className="footer__information">1234 - Peru</li>
-                        <li className="footer__information">La Libertad - 43210</li>
-                        <li className="footer__information">123-456-789</li>
-                    </ul>
+                    <br/>
                     <br/>
                     <div className="footer__content">
-                    <h3 className="footer__title">Contact Us</h3>
+                    <h3 className="footer__title">Redes Sociales</h3>
 
                     <ul className="footer__data">
-                        <li className="footer__information">+999 888 777</li>
-                        
+
                         <div className="footer__social">
                             <a href="https://www.facebook.com/" className="footer__social-link">
                                 <i className="ri-facebook-fill"></i>

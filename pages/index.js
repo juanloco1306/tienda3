@@ -95,8 +95,8 @@ const Home = ({ products, bannerData }) => {
             <br/>
             <br/>
     <div className='product section container'>
-      <h2 className='section__title-center'>Best selling products</h2>
-      <p className='product__description'>Speakers</p>
+      <h2 className='section__title-center'>Nuestros Hongos</h2>
+      
  
       
 
